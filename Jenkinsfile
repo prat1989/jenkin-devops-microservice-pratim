@@ -8,11 +8,9 @@ pipeline {
 					echo "Build"
 			}
 		}
-	}
 		stage ('Test') {
 			steps {
 					echo "Test"
-					echo "Test Pass"
 			}
 		}
 		stage ('Integration Test') {
@@ -20,4 +18,5 @@ pipeline {
 					echo "Integration Test"
 			}
 		}
+	}
 }
