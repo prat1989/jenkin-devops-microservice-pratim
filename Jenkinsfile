@@ -24,7 +24,7 @@ pipeline {
 		}
     stage ('Compile') {
 			steps {
-          sh "mvn clean complie"
+          sh "mvn clean compile"
       }
     }
 
@@ -53,27 +53,3 @@ pipeline {
 
 	}
 }
-
-// pipeline {
-//   agent {
-//     docker {
-//       image 'node:6-alpine'
-//       args '-p 3000:3000'
-//     }
-//   }
-//   environment {
-//     CI = 'true'
-//   }
-//   stages {
-//     stage('Build') {
-//       steps {
-//         sh 'npm install'
-//       }
-//     }
-//     stage('Test') {
-//       steps {
-//         sh './jenkins/scripts/test.sh'
-//       }
-//     }
-//   }
-// }
