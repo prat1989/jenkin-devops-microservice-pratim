@@ -60,8 +60,9 @@ pipeline {
               dockerImage.push('latest')
             }
           }
-      }
-	}
+        }
+	    }
+    }
 
 	post {
 		always {
@@ -74,3 +75,4 @@ pipeline {
 			echo 'I run when fails'
 		}
 	}
+}
