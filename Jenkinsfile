@@ -73,5 +73,4 @@ pipeline {
 		failure {
 			echo 'I run when fails'
 		}
-
 	}
